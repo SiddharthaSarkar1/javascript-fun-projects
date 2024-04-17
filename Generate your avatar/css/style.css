@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(44, 120, 18, 1) 11%,
+    rgba(6, 235, 171, 1) 14%,
+    rgba(204, 45, 171, 1) 26%,
+    rgba(121, 9, 85, 1) 36%,
+    rgba(155, 53, 176, 1) 46%,
+    rgba(83, 72, 138, 1) 55%,
+    rgba(16, 81, 163, 1) 66%,
+    rgba(45, 136, 191, 1) 74%,
+    rgba(44, 143, 179, 1) 84%,
+    rgba(19, 179, 227, 1) 87%,
+    rgba(18, 162, 201, 1) 91%,
+    rgba(152, 223, 237, 1) 97%
+  );
+  font-family: "Luckiest Guy", cursive;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  margin-top: 60px;
+}
+
+section h1 {
+  color: white;
+  text-shadow: 0 15px 20px black;
+  font-size: 35px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
+
+.center {
+  background: rgb(64, 75, 114);
+  border: 3px solid white;
+  border-radius: 12px;
+  width: 60%;
+  height: 450px;
+  padding: 15px;
+  box-shadow: 0 15px 20px 0 #000;
+}
+
+.center button {
+  width: 30%;
+  margin: 10px auto;
+  height: 40px;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 12px;
+  background: rgb(37, 24, 219);
+  color: white;
+  border: 2px solid white;
+  outline: none;
+  margin-top: 30px;
+  font-family: "Luckiest Guy", cursive;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+.details input {
+  width: 30%;
+  margin: 10px auto;
+  height: 50px;
+  padding: 5px;
+  font-size: 25px;
+  border-radius: 12px;
+  font-weight: bold;
+  background: crimson;
+  color: white;
+  border: 2px solid white;
+  outline: none;
+  text-align: center;
+}
+
+.details label {
+  color: white;
+  text-shadow: 0 15px 20px black;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.95);
+  }
+}
